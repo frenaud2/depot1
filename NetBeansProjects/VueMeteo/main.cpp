@@ -20,7 +20,9 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     VueMeteo maVueMeteo;
+     maVueMeteo.mettreAJour();
     maVueMeteo.show();
+   
 
     return app.exec();
 }

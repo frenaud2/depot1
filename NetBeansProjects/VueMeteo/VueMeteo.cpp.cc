@@ -10,12 +10,19 @@
  *
  * Created on 20 décembre 2018, 17:39
  */
-
+#include <iostream>
 #include "VueMeteo.h"
+using namespace std;
 
 VueMeteo::VueMeteo() {
     widget.setupUi(this);
 }
 
 VueMeteo::~VueMeteo() {
+}
+
+void VueMeteo::mettreAJour(){
+    widget.temperature->setText("200");  
+    widget.vitesseVent->setText("26");
+    
 }
